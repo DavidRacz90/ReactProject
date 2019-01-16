@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Display = ({ amount}) => (<div> {amount}</div>);
+const Display = ({ amount, nut}) => (<div> {amount} {nut}</div>);
 
 
 export default Display;
