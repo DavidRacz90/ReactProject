@@ -2,17 +2,19 @@ import React, { Component } from 'react';
 import Display from './Display';
 import Button from './Button';
 
-
 class App extends Component {
   
+  state = {
+    amount : 0
+  }
 
-  addACorn() {
+  addACorn = () => {
     this.setState({
       amount: this.state.amount + 1
     });
   }
 
-  eatOneCorn() {
+  eatOneCorn = () => {
     this.setState({
       amount: this.state.amount > 0 ? this.state.amount - 1 : this.state.amount
     });
@@ -26,10 +28,16 @@ class App extends Component {
     keyActionPairs[e.keyCode] ? keyActionPairs[e.keyCode]() : () => { };
   }
 
+  
 
   render() {
-    
-    
+    return (
+      <div> 
+        <Button clickEvent={this.addACorn} name="Buy One 🌰"/>
+        <h3><Display amount={this.amount} /></h3>
+        <Button clickEvent={this.eatOneCorn} name="Eats one 🌰"/>
+      </div>
+    )
   }
 
 }
