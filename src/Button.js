@@ -3,9 +3,9 @@ import React from 'react';
 const Button = ({ amountChange }) => {
   return (
     <button>
-      onChange={ amountChange }
+      { amountChange }
     </button>
   )
 }
 
-export default button;
+export default Button;

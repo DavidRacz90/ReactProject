@@ -8,4 +8,4 @@ const Display = ({ amount }) => {
   );
 };
 
-export default display;
+export default Display;

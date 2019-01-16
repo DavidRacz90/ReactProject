@@ -15,11 +15,13 @@ class App extends Component {
   // }
 
   render() {
+    const { amount } = this.state;
     return (
       <div>
+        <h1>Simple Golden Acorn App</h1>
         <Button />
-        <Display />
-        <Button />
+        <Display amount = {amount}/>
+        <Button />     
       </div>
     );
   }
