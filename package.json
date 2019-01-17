@@ -29,8 +29,13 @@
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "redux-devtools-extension": "^2.13.7",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
     "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1"
   }
 }
