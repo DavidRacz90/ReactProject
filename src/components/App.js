@@ -1,11 +1,14 @@
 import React from 'react';
-import { buyingAcorn} from '../actions/buyingAcorn';
-import { eatingAcorn } from '../actions/eatingAcorn';
+import BuyAcorn from '../containers/BuyAcorn'
+import EatAcorn from '../containers/EatingAcorn'
+import DisplayAcorn from '../containers/Display';
 
-const App = () => {
-  return (
-
-  )
-}
+const App = () => (
+  <main>
+    <BuyAcorn />
+    <DisplayAcorn />
+    <EatAcorn />
+  </main>
+)
 
 export default App;
