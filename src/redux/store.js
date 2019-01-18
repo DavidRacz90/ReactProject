@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import rootReducer from '../src/reducers/index';
+import rootReducer from '../redux/reducers/reducerIndex';
 
 const clickStore = createStore(rootReducer, composeWithDevTools());
 

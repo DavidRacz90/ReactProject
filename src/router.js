@@ -7,7 +7,7 @@ import HomePage from './Links/home';
 
 
 class Router extends Component {
-  renderRoutes = () => {
+  render = () => {
     return (
     <BrowserRouter>
       <div>
@@ -16,7 +16,8 @@ class Router extends Component {
         <Route exact path="/simple/states" component={AppWithState}/>
         <Route exact path="/simple/redux" component={AppWithRedux}/>
       </div>
-    </BrowserRouter>)
+    </BrowserRouter>
+    )
   };
 };
 
